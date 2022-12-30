@@ -10,7 +10,7 @@ const countinueFun = async () => {
   const countinue= await inquirer.prompt({
     name: "countinue",
     type: "list",
-    message: "Do You Want to Add More",
+    message: "Select: ",
     choices: ["Add More","Remove a TODO","See Todo List","Exit"],
   });
   switch (countinue.countinue) {
@@ -66,7 +66,7 @@ const removeTODO = async () => {
     if(remove.remove){
         for (let index = 0; index < addItems.length; index++) {
             if(addItems[index]==remove.remove){
-               delete addItems[index]
+               addItems.splice(index,1)
             }
         }
       }else{
