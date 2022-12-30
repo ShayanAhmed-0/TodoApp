@@ -1,0 +1,31 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "TodoApp in cli By Shayan.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShayanAhmed-0/TodoApp.git"
+  },
+  "keywords": [],
+  "author": "Shayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShayanAhmed-0/TodoApp/issues"
+  },
+  "homepage": "https://github.com/ShayanAhmed-0/TodoApp#readme",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  },
+  "files": ["lib/**/*"],
+  "bin": "./lib/index.js"
+}
