@@ -46,12 +46,17 @@ const addItemFun = async () => {
 };
 
 const seeTodo =() => {
-    addItems.forEach(element => {
+    if(addItems.length>0)
+    {addItems.forEach(element => {
         console.log(element)
     });
+}else{
+    console.log("Your TODO is Empty")
+}
   };
 
 const removeTODO = async () => {
+    if(addItems.length>0){
     const remove= await inquirer.prompt({
       name: "remove",
       type: "list",
@@ -67,6 +72,9 @@ const removeTODO = async () => {
       }else{
         condition=true;
       }
+    }else{
+        console.log("Your TODO is Empty")
+    }
   };  
 
 const start = async () => {
