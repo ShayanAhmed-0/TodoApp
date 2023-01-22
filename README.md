@@ -8,7 +8,7 @@ TODO App in cli By Shayan.
 ## Setup
 Want to use just type below command.
 ```bash
-npx shayanatm
+npx shayantodo
 ```
 
 # Packages Used
